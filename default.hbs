@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "/icons/favicon.ico"}}" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{{asset "icons/apple-touch-icon.png"}}" />
+	<link rel="apple-touch-icon" sizes="57x57" href="{{asset "icons/apple-touch-icon-57x57.png"}}" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{asset "icons/apple-touch-icon-72x72.png"}}" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset "icons/apple-touch-icon-76x76.png"}}" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{asset "icons/apple-touch-icon-114x114.png"}}" />
+	<link rel="apple-touch-icon" sizes="120x120" href="{{asset "icons/apple-touch-icon-120x120.png"}}" />
+	<link rel="apple-touch-icon" sizes="144x144" href="{{asset "icons/apple-touch-icon-144x144.png"}}" />
+	<link rel="apple-touch-icon" sizes="152x152" href="{{asset "icons/apple-touch-icon-152x152.png"}}" />
+
+    {{! Styles and Fonts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/icons.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic,300italic,700italic|Source+Code+Pro:300,400,500,700|Bree+Serif' rel='stylesheet' type='text/css'>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+	<header class="main-header">
+		<div class="main-header-content">
+			<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			<h2 class="blog-description">{{@blog.description}}</h2>
+		</div>
+		
+		{{! Optional navigation menu }}
+		
+		{{!
+		<nav class="main-nav">
+			<a href="/">Blog</a>
+			<a href="/about">About</a>
+			<a href="/contact">Contact</a>
+		</nav>
+		}}
+		
+	</header>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+    
+    <footer class="site-footer">
+    	<section class="rss"><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"></a></section>
+    	{{! Optional Twitter link - replace both instances of "username" below }}
+    	{{!
+    		<section class="twitter"><a class="icon-twitter" href="http://twitter.com/username"> @username</a></section>
+    	}}
+        <section class="copyright">&copy; {{date format="YYYY"}} {{@blog.title}}</section>
+        <section class="poweredby"><a href="http://coffeeintoapps.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://ghost.org">Ghost</a>.</section>
+    </footer>
+    {{ghost_foot}}
+</body>
+</html>
