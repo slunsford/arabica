@@ -1,17 +1,24 @@
-#Arabica
+# Arabica
 
 A smooth, minimal [Ghost](https://ghost.org) theme.
 
-## Copyright & License
+## Installation
+Move the `arabica` folder into `content/themes` in your Ghost installation. Restart Ghost and select Arabica in your Ghost settings.
 
-Copyright &copy; 2014 Sean Lunsford
+### Update
+See the changelog for a list of updated files to replace.
+
+## Optional Elements
+`default.hbs` includes an optional navigation menu and an optional Twitter link. To enable either of these, uncomment them by removing the `{{!` and `}}` handlebars around the element.
+
+## Copyright & License
+Copyright (c) 2014 Sean Lunsford
 
 Released under the MIT License.
 
-Snippets of code were borrowed from [Casper](https://github.com/TryGhost/Casper), copyright &copy; 2013-2014 Ghost Foundation - used under the MIT License.
+Snippets of code were borrowed from [Casper](https://github.com/TryGhost/Casper), copyright (c) 2013-2014 Ghost Foundation - used under the MIT License.
 
-###MIT License
-
+### MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.

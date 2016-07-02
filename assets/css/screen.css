@@ -123,16 +123,16 @@ hr {
 }
 
 /* Links */
-.post p a {
+.post a {
     color: #FC7E0F;
     text-decoration: none;
 }
 
-.post p a:hover {
+.post a:hover {
     text-decoration: underline;
 }
 
-.post p a:visited {
+.post a:visited {
     color: #9EABB3;
     text-decoration: none;
 }
@@ -143,8 +143,13 @@ a.read-more, a.read-more:hover, a.read-more:visited {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
+	color: #3A4145;
 	text-decoration: none;
+}
+
+.post-title a {
+	color: #3A4145 !important;
+	text-decoration: none !important;
 }
 
 /* Tables and dictionaries (straight up ripped out of the Casper stylesheet with minor modifications) */
@@ -158,8 +163,7 @@ table {
     background-color: transparent;
 }
 
-table th,
-table td {
+th, td {
     padding: 8px;
     line-height: 20px;
     text-align: left;
@@ -167,7 +171,9 @@ table td {
     border-top: #EFEFEF 1px solid;
 }
 
-table th { color: #000; }
+td h3, td h4, td h5, td h6 {
+	margin: 0 0 0.5rem 0;
+}
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -183,6 +189,7 @@ table tbody + tbody { border-top: #EFEFEF 2px solid; }
 table table table { background-color: #FFF; }
 
 th {
+	color: #000;
     background-color: #F6F6F6;
 }
 
@@ -240,6 +247,7 @@ dl dd {
     margin: 0;
     font-size: 0.889rem;
     font-family: "Lato", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 0;
     color: #cccccc;
 }
