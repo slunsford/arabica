@@ -8,11 +8,11 @@ Move the `arabica` folder into `content/themes` in your Ghost installation. Rest
 ### Update
 See the changelog for a list of updated files to replace.
 
-## Optional Elements
-`default.hbs` includes an optional navigation menu and an optional Twitter link. To enable either of these, uncomment them by removing the `{{!` and `}}` handlebars around the element.
+## Optional Twitter Link
+`default.hbs` includes an optional Twitter link. To enable, uncomment it by removing the `{{!` and `}}` handlebars around the section and update the text and url with your Twitter handle.
 
 ## Copyright & License
-Copyright (c) 2014 Sean Lunsford
+Copyright (c) 2014-2015 Sean Lunsford
 
 Released under the MIT License.
 

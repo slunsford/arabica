@@ -252,23 +252,35 @@ dl dd {
     color: #cccccc;
 }
 
-.main-nav {
+/*	==========================================================================
+	Navigation
+	========================================================================== */
+
+.nav {
 	margin-top: 1rem;
 }
 
-.main-nav {
+.nav {
 	text-transform: uppercase;
 	font-size: .889rem;
 }
 
-.main-nav a {
+.nav a {
 	margin: 0 0.5rem;
 	color: #9EABB3;
 	text-decoration: none;
 }
 
-.main-nav a:hover {
+.nav a:hover {
 	color: #FC7E0F;
+}
+
+a.nav-current {
+	color: #FC7E0F;
+}
+
+a.nav-home {
+	color: #9EABB3;
 }
 
 /*	==========================================================================

@@ -1,0 +1,5 @@
+<div class="nav">
+	{{#foreach navigation}}
+		<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation" href="{{url absolute="true"}}">{{label}}</a>
+	{{/foreach}}
+</div>
