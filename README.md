@@ -17,7 +17,7 @@ See the changelog for a list of updated files to replace.
 `index.hbs` can be modified to show post excerpts instead of full posts. Change "post-full" to "post-excerpt". The length of the excerpt can be modified in `partials/post-excerpt.hbs`. The default length is 30 words.
 
 ## Copyright & License
-Copyright (c) 2014-2015 Sean Lunsford
+Copyright (c) 2014-2017 Sean Lunsford
 
 Released under the MIT License.
 
