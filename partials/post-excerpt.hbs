@@ -1,6 +1,8 @@
-{{#foreach posts}}
 <article class="{{post_class}}">
     <header class="post-header">
+		{{#if image}}
+			<img src="{{image}}"></img>
+		{{/if}}
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
     <section class="post-excerpt">
@@ -10,6 +12,3 @@
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM D, YYYY"}}</time> 
     </footer>
 </article>
-{{/foreach}}
-
-{{pagination}}

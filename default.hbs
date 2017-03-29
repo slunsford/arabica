@@ -42,6 +42,14 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/icons.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,100italic,300italic,700italic|Source+Code+Pro:300,400,500,700|Bree+Serif' rel='stylesheet' type='text/css'>
+    
+    {{! Bigfoot - popover footnotes }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{{asset "bigfoot/dist/bigfoot.js"}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset "bigfoot/dist/bigfoot-number.css"}}" />
+    <script type="text/javascript">
+    	$.bigfoot();
+    </script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
