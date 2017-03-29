@@ -10,6 +10,22 @@
     <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="rghros-Jyd_QXpAqKENkDRvRecE_9bHcatDBKdI92lk" />
+    <meta name="google-site-verification" content="9BascQNH75NzlE9CopBzWORQKtzUbPQ-87wqWsBvMEg" />
+
+	{{! Google Analytics }}
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53110723-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	
+	{{! <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"> }}
 
     <link rel="shortcut icon" href="{{asset "/icons/favicon.ico"}}" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{{asset "icons/apple-touch-icon.png"}}" />
@@ -41,7 +57,7 @@
 <body class="{{body_class}}">
 	<header class="main-header">
 		<div class="main-header-content">
-			<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			<h1 class="blog-title"><a href="/">{{@blog.title}}</a></h1>
 			<h2 class="blog-description">{{@blog.description}}</h2>
 		</div>
 		
@@ -53,13 +69,11 @@
     {{{body}}}
     
     <footer class="site-footer">
+    	{{! Change "Sean Lunsford" to name or @blog.title; change Twitter link }}
     	<section class="rss"><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"></a></section>
-    	{{! Optional Twitter link - replace both instances of "username" below }}
-    	{{!
-    		<section class="twitter"><a class="icon-twitter" href="http://twitter.com/username"> @username</a></section>
-    	}}
-        <section class="copyright">&copy; {{date format="YYYY"}} {{@blog.title}}</section>
-        <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://ghost.org">Ghost</a>.</section>
+    	<section class="twitter"><a class="icon-twitter" href="https://twitter.com/splunsford"> @SPLunsford</a> | <a href="https://twitter.com/_thedarkroast">@_thedarkroast</a></section>
+    	<section class="copyright">&copy; {{date format="YYYY"}} Sean Lunsford</section>
+        <section class="poweredby"><a href="http://thedarkroast.com/arabica/">Arabica</a> theme by yours truly. Published with <a href="https://ghost.org">Ghost</a>.</section>
     </footer>
     {{ghost_foot}}
 </body>
