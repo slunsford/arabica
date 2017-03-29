@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<main class="content" role="main">
+	
+	{{#tag}}
+		<img src="{{image}}" class="tag-image"></img>
+		<h2 class="tag-title">{{name}}</h2>
+		<p class="tag-description">{{description}}</p>
+	{{/tag}}
+
+	<div class="extra-pagination">
+	    {{pagination}}
+	</div>
+	
+	{{#foreach posts}}
+	    {{> "post-full"}}
+	{{/foreach}}
+	
+	{{pagination}}
+</main>

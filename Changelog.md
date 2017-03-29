@@ -15,3 +15,9 @@ Changed files: `default.hbs`, `assets/css/screen.css`, `package.json`, `README.m
 Added file: `partials\navigation.hbs`
 - Support for Ghost navigation (replaces previous navigation)
 - Current page highlighted in navigation (except Home)
+
+## 1.1 - Mar 28, 2017
+- Popover footnotes
+- Option to show post excerpts
+- Support for post images
+- Support for tag pages with tag name, image, and description
