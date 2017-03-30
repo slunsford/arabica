@@ -5,9 +5,6 @@ A smooth, minimal [Ghost](https://ghost.org) theme.
 ## Installation
 Move the `arabica` folder into `content/themes` in your Ghost installation. Restart Ghost and select Arabica in your Ghost settings.
 
-### Update
-See the changelog for a list of updated files to replace.
-
 ## Options
 
 ### Twitter Link
