@@ -22,7 +22,7 @@ Added file: `partials\navigation.hbs`
 - Added support for post images
 - Added support for tag pages with tag name, image, and description
 
-# 1.1.1 - Apr 4, 2017
+## 1.1.1 - Apr 4, 2017
 - Removed the top margin on the tag page header
 - Changed the Twitter link in the footer to use the profile saved in settings
 - Added a Facebook link in the footer using the page saved in settings
