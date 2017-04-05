@@ -10,9 +10,6 @@ See the changelog for a list of updated files to replace.
 
 ## Options
 
-### Twitter Link
-`default.hbs` includes an optional Twitter link. To enable, uncomment it by removing the `{{!` and `}}` handlebars around the section and update the text and url with your Twitter handle.
-
 ### Post Excerpts
 `index.hbs` and `tag.hbs` can be modified to show post excerpts instead of full posts. Change "post-full" to "post-excerpt". The length of the excerpt can be modified in `partials/post-excerpt.hbs`. The default length is 30 words.
 
