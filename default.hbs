@@ -54,10 +54,8 @@
     
     <footer class="site-footer">
     	<section class="rss"><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"></a></section>
-    	{{! Optional Twitter link - replace both instances of "username" below }}
-    	{{!
-    		<section class="twitter"><a class="icon-twitter" href="http://twitter.com/username"> @username</a></section>
-    	}}
+		{{#if @blog.twitter}}<section class="twitter"><a class="icon-twitter" href="{{twitter_url}}"> {{@blog.twitter}}</a></section>{{/if}}
+		{{#if @blog.facebook}}<section class="facebook"><a class="icon-facebook" href="{{facebook_url}}"> {{@blog.facebook}}</a></section>{{/if}}
         <section class="copyright">&copy; {{date format="YYYY"}} {{@blog.title}}</section>
         <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://ghost.org">Ghost</a>.</section>
     </footer>
