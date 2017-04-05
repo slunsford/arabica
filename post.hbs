@@ -22,7 +22,8 @@
 			<section class="tags post-meta">
 				{{tags prefix="Tagged "}}
 			</section>
-			<section class="share">
+			{{! Sharing links below hidden by default - remove `hidden="true"` }}
+			<section class="share" hidden="true">
                 <h4>Share this post</h4>
                 <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -36,7 +37,7 @@
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden"></span>
                 </a>
-            </section>	
+            </section>
 		</footer>
 	{{/post}}
 	</article>
