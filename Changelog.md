@@ -26,3 +26,6 @@ Added file: `partials\navigation.hbs`
 - Removed the top margin on the tag page header
 - Changed the Twitter link in the footer to use the profile saved in settings
 - Added a Facebook link in the footer using the page saved in settings
+
+## 1.1.2 - Jun 22, 2017
+- Fix for source code appearing above title
