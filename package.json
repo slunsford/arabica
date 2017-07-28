@@ -1,5 +1,7 @@
 {
-  "name": "Arabica",
+  "name": "arabica",
   "version": "1.1.1",
   "author": "Sean Lunsford"
+  {"author": {"email": "sean@thedarkroast.com"}}
+  {"config": { "posts_per_page": 5}}
 }
