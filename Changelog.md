@@ -32,4 +32,4 @@ Added file: `partials\navigation.hbs`
 
 ## 2.0.0
 - Ghost 1.0 compatibility
-- **Breaks compatibility with older versions of Ghost**
+- **Breaks compatibility with older versions of Ghost** (Not all features will work as expected)
