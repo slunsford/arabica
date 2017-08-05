@@ -469,7 +469,7 @@ a.nav-blog {
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
-.archive-template .extra-pagination {
+.paged .extra-pagination {
     display: block;
 }
 

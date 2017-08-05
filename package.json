@@ -1,5 +1,29 @@
 {
-  "name": "Arabica",
-  "version": "1.1.1",
-  "author": "Sean Lunsford"
+	"name": "arabica",
+	"description": "A smooth, minimal Ghost theme",
+	"homepage": "https://thedarkroast.com/arabica/",
+	"version": "2.0.0",
+	"engines": {
+		"ghost": ">=1.0.0"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Sean Lunsford",
+  		"email": "sean@thedarkroast.com",
+  		"url": "https://thedarkroast.com"
+  	},
+  	"screenshots": {
+		"desktop": "assets/screenshot-desktop.png",
+		"mobile": "assets/screenshot-mobile.png"
+	},
+	"config": {
+		"posts_per_page": 5
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal",
+			"Personal Blogs"
+		]
+	}
 }

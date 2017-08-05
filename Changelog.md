@@ -17,7 +17,19 @@ Added file: `partials\navigation.hbs`
 - Current page highlighted in navigation (except Home)
 
 ## 1.1 - Mar 28, 2017
-- Popover footnotes
-- Option to show post excerpts
-- Support for post images
-- Support for tag pages with tag name, image, and description
+- Added popover footnotes
+- Added option to show post excerpts
+- Added support for post images
+- Added support for tag pages with tag name, image, and description
+
+## 1.1.1 - Apr 4, 2017
+- Removed the top margin on the tag page header
+- Changed the Twitter link in the footer to use the profile saved in settings
+- Added a Facebook link in the footer using the page saved in settings
+
+## 1.1.2 - Jun 22, 2017
+- Fix for source code appearing above title
+
+## 2.0.0 - Aug 5, 2017
+- Ghost 1.0 compatibility
+- **Breaks compatibility with older versions of Ghost** (Not all features will work as expected)
