@@ -12,7 +12,18 @@
   		"email": "sean@thedarkroast.com",
   		"url": "https://thedarkroast.com"
   	},
+  	"screenshots": {
+		"desktop": "assets/screenshot-desktop.png",
+		"mobile": "assets/screenshot-mobile.png"
+	},
 	"config": {
 		"posts_per_page": 5
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal",
+			"Personal Blogs"
+		]
 	}
 }
