@@ -9,16 +9,19 @@
     <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="shortcut icon" href="{{asset "/icons/favicon.ico"}}" type="image/x-icon">
-	  <link rel="apple-touch-icon" href="{{asset "icons/apple-touch-icon.png"}}" />
-	  <link rel="apple-touch-icon" sizes="57x57" href="{{asset "icons/apple-touch-icon-57x57.png"}}" />
-	  <link rel="apple-touch-icon" sizes="72x72" href="{{asset "icons/apple-touch-icon-72x72.png"}}" />
-	  <link rel="apple-touch-icon" sizes="76x76" href="{{asset "icons/apple-touch-icon-76x76.png"}}" />
-	  <link rel="apple-touch-icon" sizes="114x114" href="{{asset "icons/apple-touch-icon-114x114.png"}}" />
-	  <link rel="apple-touch-icon" sizes="120x120" href="{{asset "icons/apple-touch-icon-120x120.png"}}" />
-	  <link rel="apple-touch-icon" sizes="144x144" href="{{asset "icons/apple-touch-icon-144x144.png"}}" />
-	  <link rel="apple-touch-icon" sizes="152x152" href="{{asset "icons/apple-touch-icon-152x152.png"}}" />
+	
+	{{! favicon and apple-touch-icon - designed for thedarkroast.com but you're welcome to use them }}
+	{{!--
+	    <link rel="shortcut icon" href="{{asset "/icons/favicon.ico"}}" type="image/x-icon">
+		<link rel="apple-touch-icon" href="{{asset "icons/apple-touch-icon.png"}}" />
+		<link rel="apple-touch-icon" sizes="57x57" href="{{asset "icons/apple-touch-icon-57x57.png"}}" />
+		<link rel="apple-touch-icon" sizes="72x72" href="{{asset "icons/apple-touch-icon-72x72.png"}}" />
+		<link rel="apple-touch-icon" sizes="76x76" href="{{asset "icons/apple-touch-icon-76x76.png"}}" />
+		<link rel="apple-touch-icon" sizes="114x114" href="{{asset "icons/apple-touch-icon-114x114.png"}}" />
+		<link rel="apple-touch-icon" sizes="120x120" href="{{asset "icons/apple-touch-icon-120x120.png"}}" />
+		<link rel="apple-touch-icon" sizes="144x144" href="{{asset "icons/apple-touch-icon-144x144.png"}}" />
+		<link rel="apple-touch-icon" sizes="152x152" href="{{asset "icons/apple-touch-icon-152x152.png"}}" />
+	--}}
 
     {{! Styles and Fonts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
@@ -40,7 +43,7 @@
 <body class="{{body_class}}">
 	<header class="main-header">
 		<div class="main-header-content">
-			<h1 class="blog-title"><a href="/">{{@blog.title}}</a></h1>
+			<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 			<h2 class="blog-description">{{@blog.description}}</h2>
 		</div>
 		
@@ -52,11 +55,11 @@
     {{{body}}}
     
     <footer class="site-footer">
-    	{{! Change "Sean Lunsford" to name or @blog.title; change Twitter link }}
     	<section class="rss"><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"></a></section>
-    	<section class="twitter"><a class="icon-twitter" href="{{twitter_url "@splunsford"}}"> @splunsford</a> | <a href="{{twitter_url}}"> {{@blog.twitter}}</a></section>
-    	<section class="copyright">&copy; 2014&ndash;{{date format="YYYY"}} Sean Lunsford</section>
-        <section class="poweredby"><a href="http://thedarkroast.com/arabica/">Arabica</a> theme by yours truly. Published with <a href="https://ghost.org">Ghost</a>.</section>
+		{{#if @blog.twitter}}<section class="twitter"><a class="icon-twitter" href="{{twitter_url}}"> {{@blog.twitter}}</a></section>{{/if}}
+		{{#if @blog.facebook}}<section class="facebook"><a class="icon-facebook" href="{{facebook_url}}"> {{@blog.facebook}}</a></section>{{/if}}
+        <section class="copyright">&copy; {{date format="YYYY"}} {{@blog.title}}</section>
+        <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://ghost.org">Ghost</a>.</section>
     </footer>
     {{ghost_foot}}
 </body>
