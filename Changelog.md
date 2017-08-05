@@ -30,6 +30,6 @@ Added file: `partials\navigation.hbs`
 ## 1.1.2 - Jun 22, 2017
 - Fix for source code appearing above title
 
-## 2.0.0
+## 2.0.0 - Aug 5, 2017
 - Ghost 1.0 compatibility
 - **Breaks compatibility with older versions of Ghost** (Not all features will work as expected)
