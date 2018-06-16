@@ -20,7 +20,7 @@ To embed a YouTube video that scales to fit the width of a post, put the embed c
 ```
 
 ## Copyright
-Copyright (c) 2014-2017 Sean Lunsford
+Copyright (c) 2014-2018 Sean Lunsford
 
 Released under the MIT License.
 
