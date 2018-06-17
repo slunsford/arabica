@@ -33,3 +33,7 @@ Added file: `partials\navigation.hbs`
 ## 2.0.0 - Aug 5, 2017
 - Ghost 1.0 compatibility
 - **Breaks compatibility with older versions of Ghost** (Not all features will work as expected)
+
+## 2.0.1 - Jun 17, 2018
+- Hide horizontal rule above hidden footnotes section
+- Add `.yt-wrapper` class to scale embedded YouTube videos to post width
