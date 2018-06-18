@@ -397,6 +397,32 @@ a.nav-home, a.nav-blog {
 	max-width: 100%;	/* Keep image contained in width of post */
 	}
 
+.footnotes-sep {
+	display: none;
+}
+
+/* YouTube embed wrapper to scale to full-width */
+
+.yt-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+
+.yt-wrapper:before{
+	content: "";
+	display: block;
+	padding-top: 56.25%;	/* 16:9 aspect ratio */
+}
+
+.yt-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*	==========================================================================
 	Tags
 	========================================================================== */
