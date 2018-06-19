@@ -403,6 +403,35 @@ a.nav-home, a.nav-blog {
 	display: none;
 }
 
+/* Koenig image styles */
+
+.post .kg-image-wide {
+	max-width: 1050px;
+	margin: 0 -200px;
+}
+
+@media (max-width: 1100px) {
+	.post .kg-image-wide {
+		max-width: 140%;
+		margin: 0 -20%;
+	}
+}
+
+@media (max-width: 950px) {
+	.post .kg-image-wide {
+		max-width: 120%;		/* Start calculating as percentage of viewport? */
+		margin: 0 -10%;
+	}
+}
+
+@media (max-width: 850px) {
+	.post .kg-image-wide {
+		max-width: 110%;
+		margin: 0 -5%;
+	}
+}
+
+
 /* YouTube embed wrapper to scale to full-width */
 
 .yt-wrapper {
