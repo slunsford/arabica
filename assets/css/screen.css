@@ -394,8 +394,11 @@ a.nav-home, a.nav-blog {
 }
 
 .post img {
+	display: block;
 	max-width: 100%;	/* Keep image contained in width of post */
-	}
+	max-height: 500px;
+	margin: 0 auto;
+}
 
 .footnotes-sep {
 	display: none;
