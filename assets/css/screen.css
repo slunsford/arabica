@@ -396,7 +396,7 @@ a.nav-home, a.nav-blog {
 .post img {
 	display: block;
 	max-width: 100%;	/* Keep image contained in width of post */
-	margin: 0 auto;
+	margin: 0 auto 0.5rem;
 }
 
 .footnotes-sep {
@@ -404,6 +404,14 @@ a.nav-home, a.nav-blog {
 }
 
 /* Koenig image styles */
+
+.kg-image-card {
+	margin-bottom: 0.5rem;
+}
+
+.kg-image-card img {
+	margin-bottom: 0;
+}
 
 .post .kg-image-wide {
 	max-width: 1050px;
@@ -438,6 +446,11 @@ a.nav-home, a.nav-blog {
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
+}
+
+.kg-image-card figcaption {
+	font-size: 0.79rem;
+	text-align: center;
 }
 
 
