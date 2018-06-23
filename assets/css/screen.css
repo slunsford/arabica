@@ -432,13 +432,6 @@ a.nav-home, a.nav-blog {
 	}
 }
 
-@media (max-width: 850px) {
-	.post .kg-image-wide {
-		max-width: 110%;
-		margin: 0 -5%;
-	}
-}
-
 .post .kg-image-full {
 	max-width: 100vw;
 	position: relative;
