@@ -397,12 +397,56 @@ a.nav-home, a.nav-blog {
 .post img {
 	display: block;
 	max-width: 100%;	/* Keep image contained in width of post */
-	margin: 0 auto;
+	margin: 0 auto 0.5rem;
 }
 
 .footnotes-sep {
 	display: none;
 }
+
+/* Koenig image styles */
+
+.kg-image-card {
+	margin-bottom: 0.5rem;
+}
+
+.kg-image-card img {
+	margin-bottom: 0;
+}
+
+.post .kg-image-wide {
+	max-width: 1050px;
+	margin: 0 -200px;
+}
+
+@media (max-width: 1100px) {
+	.post .kg-image-wide {
+		max-width: 140%;
+		margin: 0 -20%;
+	}
+}
+
+@media (max-width: 950px) {
+	.post .kg-image-wide {
+		max-width: 120%;		/* Start calculating as percentage of viewport? */
+		margin: 0 -10%;
+	}
+}
+
+.post .kg-image-full {
+	max-width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.kg-image-card figcaption {
+	font-size: 0.79rem;
+	text-align: center;
+}
+
 
 /* YouTube embed wrapper to scale to full-width */
 
