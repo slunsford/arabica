@@ -35,5 +35,10 @@ Added file: `partials\navigation.hbs`
 - **Breaks compatibility with older versions of Ghost** (Not all features will work as expected)
 
 ## 2.0.1 - Jun 17, 2018
-- Hide horizontal rule above hidden footnotes section
-- Add `.yt-wrapper` class to scale embedded YouTube videos to post width
+- Hid the horizontal rule above the hidden footnotes section
+- Added a `.yt-wrapper` class to scale embedded YouTube videos to post width
+
+## 2.1 - Jun 25, 2018
+- Added Koenig editor support – new image classes and captions
+- Behavior of "Home" or "Blog" nav links are now the same – gray when current, only orange on hover
+- Images less than the width of a post are now centered
