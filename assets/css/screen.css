@@ -293,19 +293,32 @@ a.nav-home, a.nav-blog {
     display: table;
     width: 100%;
     margin-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
     text-align: center;
     overflow: hidden;
     font-size: .79rem;
 }
 
-.site-footer a {
-	color: #FC7E0F;
+.site-footer, .site-footer a {
+	color: #9EABB3;
 	text-decoration: none;
 }
 
 .site-footer a:hover {
-	color: #9EABB3;
+	color: #FC7E0F;
+}
+
+.site-footer .copyright, .site-footer .poweredby, .site-footer .twitter, .site-footer .facebook {
+	display: inline-block;
+	position: absolute;
+}
+
+.site-footer .copyright, .site-footer .twitter {
+	left: 0;
+}
+
+.site-footer .poweredby, .site-footer .facebook {
+	right: 0;
 }
 
 
