@@ -325,4 +325,24 @@
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+	.bigfoot-footnote {
+		background: #101213;
+		border-color: #212528;
+	}
+
+	.bigfoot-footnote__wrapper {
+		background-color: #101213;
+	}
+
+	.bigfoot-footnote__content {
+		background: #101213;
+	}
+
+	.bigfoot-footnote__tooltip {
+		background: #101213;
+		border-color: #212528;
+	}
+}
+
 /*# sourceMappingURL=bigfoot-number.css.map */
