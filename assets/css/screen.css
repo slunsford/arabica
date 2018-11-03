@@ -552,13 +552,13 @@ a.nav-home, a.nav-blog {
 }
 
 /* ==========================================================================
-   12. Media Queries - Smaller than 500px
+   12. Media Queries
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
 
 	html {
-		font-size: 100%;
+		font-size: 100%; /* Reduce from 112.5% */
 	}
 
    .blog-title {
@@ -567,5 +567,18 @@ a.nav-home, a.nav-blog {
 	
 	.blog-description {
 	   font-size: var(--font-size-minus-1);
+	}
+}
+
+/* 🌑 DARK MODE 🌑 */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #101213;
+		--main-text-color: #e7e9ea;
+		--secondary-text-color: #5f686e;
+		--link-color: #f65f09;
+	
+		--table-border-color: #212528;
+		--th-background-color: #1e2124;
 	}
 }
