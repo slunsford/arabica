@@ -20,6 +20,19 @@ http://modularscale.com/
 8:9 major second
 */
 
+:root {
+	--font-size-minus-3: 0.702rem;
+	--font-size-minus-2: 0.79rem;
+	--font-size-minus-1: 0.889rem;
+	--font-size-plus-1: 1.125rem;
+	--font-size-plus-2: 1.266rem;
+	--font-size-plus-3: 1.424rem;
+	--font-size-plus-4: 1.602rem;
+	--font-size-plus-5: 1.802rem;
+	--font-size-plus-6: 2.281rem;
+	--font-size-plus-7: 2.887rem;
+}
+
 html {
     height: 100%;
     max-height: 100%;
@@ -52,23 +65,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 1.802rem;
+	font-size: var(--font-size-plus-5);
 }
 
 h2 {
-	font-size: 1.602rem;
+	font-size: var(--font-size-plus-4);
 }
 
 h3 {
-	font-size: 1.424rem;
+	font-size: var(--font-size-plus-3);
 }
 
 h4 {
-	font-size: 1.266rem;
+	font-size: var(--font-size-plus-2);
 }
 
 h5 {
-	font-size: 1.125rem;
+	font-size: var(--font-size-plus-1);
 }
 
 h6 {
@@ -82,7 +95,7 @@ p {
 code, tt, pre {
     font-family: "Source Code Pro", monospace, sans-serif;
     white-space: pre-wrap;
-    font-size: 0.79rem;
+    font-size: var(--font-size-minus-2);
     border: none;
     background: none;
 }
@@ -112,7 +125,7 @@ blockquote p {
 
 blockquote cite {
 	font-style: normal;
-	font-size: 0.889rem;
+	font-size: var(--font-size-minus-1)
 }
 
 hr {
@@ -234,7 +247,7 @@ dl dd {
     padding: 0;
     font-family: "Lato", sans-serif;
 	font-weight: 300;
-    font-size: 2.887rem;
+    font-size: var(--font-size-plus-7);
     vertical-align: middle;
     line-height: 1;
 }
@@ -245,7 +258,7 @@ dl dd {
 
 .blog-description {
     margin: 0;
-    font-size: 0.889rem;
+    font-size: var(--font-size-minus-1);
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -383,7 +396,7 @@ a.nav-home, a.nav-blog {
 }
 
 .post-footer .share a {
-    font-size: 1.8rem;
+    font-size: var(--font-size-plus-5);
     display: inline-block;
     margin: 1rem 1.6rem 1.6rem 0;
     color: #BBC7CC;
@@ -443,7 +456,7 @@ a.nav-home, a.nav-blog {
 }
 
 .kg-image-card figcaption {
-	font-size: 0.79rem;
+	font-size: var(--font-size-minus-2);
 	text-align: center;
 }
 
@@ -476,7 +489,7 @@ a.nav-home, a.nav-blog {
 
 .tag-title {
     font-family: "Lato", sans-serif;
-    font-size: 1.802rem;
+    font-size: var(--font-size-plus-5);
 	font-weight: bold;
 	margin-top: 0;
 }
@@ -557,10 +570,10 @@ a.nav-home, a.nav-blog {
 	}
 
    .blog-title {
-		font-size: 2.281rem;
+		font-size: var(--font-size-plus-6);
 	}
 	
 	.blog-description {
-	   font-size: 0.889rem;
+	   font-size: var(--font-size-minus-1);
 	}
 }
