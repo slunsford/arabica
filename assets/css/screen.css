@@ -391,22 +391,6 @@ a.nav-home, a.nav-blog {
 	margin: 2rem 0 0;
 }
 
-.post-footer .share {
-    margin: 0 auto;
-}
-
-.post-footer .share a {
-    font-size: var(--font-size-plus-5);
-    display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
-    text-decoration: none;
-}
-
-.post-footer .share a:hover {
-    color: #50585D;
-}
-
 .post img {
 	display: block;
 	max-width: 100%;	/* Keep image contained in width of post */
