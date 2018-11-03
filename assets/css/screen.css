@@ -21,6 +21,14 @@ http://modularscale.com/
 */
 
 :root {
+	--background-color: #fff;
+	--main-text-color: #3a4145;
+	--secondary-text-color: #9eabb3;
+	--link-color: #fc7e0f;
+	
+	--table-border-color: #efefef;
+	--th-background-color: #f6f6f6;
+	
 	--font-size-minus-3: 0.702rem;
 	--font-size-minus-2: 0.79rem;
 	--font-size-minus-1: 0.889rem;
@@ -55,7 +63,7 @@ body {
 	font-weight: 300;
     font-size: 1rem;
     line-height: 1.7;
-    color: #3A4145;
+    color: var(--main-text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,7 +123,7 @@ pre code {
 
 blockquote {
 	margin: 0 2em;
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 }
 
 blockquote p {
@@ -132,12 +140,12 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: #9EABB3 1px solid;
+    border-top: var(--secondary-text-color) 1px solid;
 }
 
 /* Links */
 .post a {
-    color: #FC7E0F;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -146,22 +154,22 @@ hr {
 }
 
 .post a:visited {
-    color: #9EABB3;
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 
 a.read-more, a.read-more:hover, a.read-more:visited {
-    color: #FC7E0F;	/* #DA1F15, #F17F33 */
+    color: var(--link-color);
     text-decoration: none;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: #3A4145;
+	color: var(--main-text-color);
 	text-decoration: none;
 }
 
 .post-title a {
-	color: #3A4145 !important;
+	color: var(--main-text-color) !important;
 	text-decoration: none !important;
 }
 
@@ -181,7 +189,7 @@ th, td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: #EFEFEF 1px solid;
+    border-top: var(--table-border-color) 1px solid;
 }
 
 td h3, td h4, td h5, td h6 {
@@ -197,13 +205,12 @@ table thead:first-child tr:first-child td {
     border-top: 0;
 }
 
-table tbody + tbody { border-top: #EFEFEF 2px solid; }
+table tbody + tbody { border-top: var(--table-border-color) 2px solid; }
 
-table table table { background-color: #FFF; }
+table table table { background-color: var(--background-color); }
 
 th {
-	color: #000;
-    background-color: #F6F6F6;
+    background-color: var(--th-background-color);
 }
 
 dl dt {
@@ -262,7 +269,7 @@ dl dd {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0;
-    color: #9EABB3;
+    color: var(--secondary-text-color);
     font-weight: 300;
 }
 
@@ -281,20 +288,20 @@ dl dd {
 
 .nav a {
 	margin: 0 0.5rem;
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 	text-decoration: none;
 }
 
 .nav a:hover {
-	color: #FC7E0F;
+	color: var(--link-color);
 }
 
 a.nav-current {
-	color: #FC7E0F;
+	color: var(--link-color);
 }
 
 a.nav-home, a.nav-blog {
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 }
 
 /*	==========================================================================
@@ -313,12 +320,12 @@ a.nav-home, a.nav-blog {
 }
 
 .site-footer a {
-	color: #FC7E0F;
+	color: var(--link-color);
 	text-decoration: none;
 }
 
 .site-footer a:hover {
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 }
 
 
@@ -338,13 +345,13 @@ a.nav-home, a.nav-blog {
 	margin-left: -.2rem;
 	padding: .35rem .1rem 0.05rem .2rem;
 	vertical-align: middle;
-	border: 1px #FC7E0F solid;
+	border: 1px var(--link-color) solid;
 	border-radius: 1.2rem;
 }
 
 .site-footer .rss a:hover {
-	color: #ffffff;
-	background: #FC7E0F;
+	color: var(--background-color);
+	background: var(--link-color);
 }
 */
 
@@ -379,12 +386,12 @@ a.nav-home, a.nav-blog {
 }
 
 .post-footer .tags a {
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 	text-decoration: none;
 }
 
 .post-footer .tags a:hover {
-	color: #FC7E0F;
+	color: var(--link-color);
 }
 
 .post-footer h4 {
@@ -483,7 +490,7 @@ a.nav-home, a.nav-blog {
 }
 
 .tag-description {
-	color: #9EABB3;
+	color: var(--secondary-text-color);
 }
 
 /* ==========================================================================
@@ -495,12 +502,12 @@ a.nav-home, a.nav-blog {
     position: relative;
     margin: 2rem auto;
     font-size: .79rem;
-    color: #9EABB3;
+    color: var(--secondary-text-color);
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: var(--secondary-text-color);
 }
 
 /* Push the previous/next links out to the left/right */
@@ -527,7 +534,7 @@ a.nav-home, a.nav-blog {
 
 .older-posts:hover,
 .newer-posts:hover {
-    color: #FC7E0F;
+    color: var(--link-color);
 }
 
 .extra-pagination {
