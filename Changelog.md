@@ -46,3 +46,7 @@ Added file: `partials\navigation.hbs`
 ## 2.2 - Nov 3, 2018
 - Dark mode (triggered by `prefers-color-scheme: dark` media query)
 - Removed Bigfoot folder, keeping just the files actually used
+
+## 2.2.1 - March 22, 2019
+- Removed visited link style
+
