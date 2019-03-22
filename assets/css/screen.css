@@ -154,11 +154,6 @@ hr {
     text-decoration: underline;
 }
 
-.post a:visited {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-}
-
 a.read-more, a.read-more:hover, a.read-more:visited {
     color: var(--link-color);
     text-decoration: none;
