@@ -52,3 +52,4 @@ Added file: `partials\navigation.hbs`
 
 ## 2.2.2 - Sept 25, 2023 (final release)
 - Updated homepage and author in package.json
+- Added note about archiving to readme
