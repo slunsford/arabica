@@ -1,8 +1,8 @@
 {
 	"name": "arabica",
 	"description": "A smooth, minimal Ghost theme",
-	"homepage": "https://thedarkroast.com/arabica/",
-	"version": "2.2.1",
+	"homepage": "https://github.com/slunsford/arabica.git",
+	"version": "2.2.2",
 	"engines": {
 		"ghost": ">=1.0.0"
 	},
@@ -10,7 +10,7 @@
 	"author": {
 		"name": "Sean Lunsford",
   		"email": "sean@thedarkroast.com",
-  		"url": "https://thedarkroast.com"
+  		"url": "https://seanlunsford.com"
   	},
   	"screenshots": {
 		"desktop": "assets/screenshot-desktop.png",

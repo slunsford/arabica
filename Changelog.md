@@ -50,3 +50,5 @@ Added file: `partials\navigation.hbs`
 ## 2.2.1 - March 22, 2019
 - Removed visited link style
 
+## 2.2.2 - Sept 25, 2023 (final release)
+- Updated homepage and author in package.json
